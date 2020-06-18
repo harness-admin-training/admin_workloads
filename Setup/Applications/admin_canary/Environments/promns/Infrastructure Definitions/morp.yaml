@@ -5,5 +5,5 @@ deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
   cloudProviderName: admincluster
-  namespace: prom
+  namespace: prom2
   releaseName: release-${infra.kubernetes.infraId}
