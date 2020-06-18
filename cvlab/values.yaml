@@ -6,4 +6,4 @@ image: ${artifact.metadata.image}
 env:
   config:
     # Override in environment with ingress controller load balancer IP or host
-    ALLOWED_ORIGINS: http://172.16.86.134:31285
+    ALLOWED_ORIGINS: http://172.16.86.134:30546
