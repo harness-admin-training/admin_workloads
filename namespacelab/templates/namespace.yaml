@@ -2,3 +2,41 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: mynamespace
+  
+  ---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: mynamespace-delegate-sa
+  namespace: mynamespace
+  
+  ---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: default-full-access
+  namespace: mynamespace
+rules:
+- apiGroups: ["", "extensions", "apps", "autoscaling", "rbac.authorization.k8s.io", "roles.rbac.authorization.k8s.io"]
+  resources: ["*"]
+  verbs: ["*"]
+- apiGroups: ["batch"]
+  resources:
+  - jobs
+  - cronjobs
+  verbs: ["*"]
+ 
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: default-view
+  namespace: mynamespace
+subjects:
+- kind: ServiceAccount
+  name: mynamespace-delegate-sa
+  namespace: mynamespace
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: default-full-access
