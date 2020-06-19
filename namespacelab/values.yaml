@@ -1,1 +1,0 @@
-namespace: ${infra.kubernetes.namespace}
