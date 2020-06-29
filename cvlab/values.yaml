@@ -6,4 +6,4 @@ image: ${artifact.metadata.image}
 env:
   config:
     # Override in environment with ingress controller load balancer IP or host
-    ALLOWED_ORIGINS: <get the URL from the lab for this to work>
+    ALLOWED_ORIGINS: http://1.2.3.4
