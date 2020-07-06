@@ -4,6 +4,6 @@ cloudProviderType: KUBERNETES_CLUSTER
 deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
-  cloudProviderName: ubuntuminik
+  cloudProviderName: drews-minikube
   namespace: prometheus
   releaseName: release-${infra.kubernetes.infraId}
