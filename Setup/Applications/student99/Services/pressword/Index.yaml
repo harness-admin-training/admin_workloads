@@ -1,5 +1,9 @@
 harnessApiVersion: '1.0'
 type: SERVICE
 artifactType: DOCKER
+configVariables:
+- name: mysql-pass
+  value: safeharness:4H0sELojQjezCsPsEyP7cg
+  valueType: ENCRYPTED_TEXT
 deploymentType: KUBERNETES
 helmVersion: V2
