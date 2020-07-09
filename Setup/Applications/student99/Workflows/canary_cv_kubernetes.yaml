@@ -18,7 +18,7 @@ notificationRules:
   - WYlgevlOQSmIIi3zZ35gKw
 phases:
 - type: KUBERNETES
-  computeProviderName: ubuntuminik
+  computeProviderName: HovgCHyzRFyYmr38DXsmgw
   daemonSet: false
   infraDefinitionName: ubuntu_minikube_prometheus
   name: Canary
@@ -66,7 +66,7 @@ phases:
   serviceName: workload_deploy
   statefulSet: false
 - type: KUBERNETES
-  computeProviderName: ubuntuminik
+  computeProviderName: HovgCHyzRFyYmr38DXsmgw
   daemonSet: false
   infraDefinitionName: ubuntu_minikube_prometheus
   name: Primary
@@ -88,7 +88,7 @@ phases:
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: ubuntuminik
+  computeProviderName: HovgCHyzRFyYmr38DXsmgw
   daemonSet: false
   infraDefinitionName: ubuntu_minikube_prometheus
   name: Rollback Canary
@@ -114,7 +114,7 @@ rollbackPhases:
   serviceName: workload_deploy
   statefulSet: false
 - type: KUBERNETES
-  computeProviderName: ubuntuminik
+  computeProviderName: HovgCHyzRFyYmr38DXsmgw
   daemonSet: false
   infraDefinitionName: ubuntu_minikube_prometheus
   name: Rollback Primary
