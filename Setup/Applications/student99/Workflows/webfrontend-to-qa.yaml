@@ -49,6 +49,15 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: SecOps Signoff
+    steps:
+    - type: APPROVAL
+      name: SecOps Scan and Signoff
+      properties:
+        approvalStateType: USER_GROUP
+        timeoutMillis: 86400000
+        userGroups:
+        - gnrkClfoQSKeBt4Gw99zIA
+        - 9Z7hYnw7Rgy1h88ZNuW4kg
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: StakeholderNotification
