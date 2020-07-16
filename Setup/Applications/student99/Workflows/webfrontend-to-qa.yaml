@@ -24,7 +24,7 @@ phases:
   name: Rolling
   phaseSteps:
   - type: K8S_PHASE_STEP
-    name: Deploy
+    name: Push2QA
     steps:
     - type: K8S_DEPLOYMENT_ROLLING
       name: pushWFEtoQA
