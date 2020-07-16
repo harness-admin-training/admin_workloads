@@ -35,7 +35,7 @@ phases:
         templateVersion: null
     stepsInParallel: false
   - type: K8S_PHASE_STEP
-    name: QASignoff
+    name: QA Signoff
     steps:
     - type: APPROVAL
       name: QA Testing and Signoff
