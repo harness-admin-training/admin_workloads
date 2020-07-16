@@ -34,6 +34,14 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
+    steps:
+    - type: APPROVAL
+      name: Approval
+      properties:
+        approvalStateType: USER_GROUP
+        timeoutMillis: 86400000
+        userGroups:
+        - WYlgevlOQSmIIi3zZ35gKw
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
