@@ -40,6 +40,9 @@ phases:
   - type: K8S_PHASE_STEP
     name: Wrap Up
     stepsInParallel: false
+  - type: K8S_PHASE_STEP
+    name: SecOpsSignoff
+    stepsInParallel: false
   provisionNodes: false
   serviceName: webfrontend
   statefulSet: false
