@@ -61,6 +61,15 @@ phases:
     stepsInParallel: true
   - type: K8S_PHASE_STEP
     name: StakeholderNotification
+    steps:
+    - type: EMAIL
+      name: Email
+      properties:
+        body: guess what it worked and stuff
+        ccAddress: ''
+        ignoreDeliveryFailure: false
+        subject: It worked!
+        toAddress: drew.oetzel@harness.io
     stepsInParallel: false
   provisionNodes: false
   serviceName: webfrontend
