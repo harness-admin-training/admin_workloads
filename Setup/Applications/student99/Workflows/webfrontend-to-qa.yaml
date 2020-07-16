@@ -60,7 +60,7 @@ phases:
         - 9Z7hYnw7Rgy1h88ZNuW4kg
     stepsInParallel: true
   - type: K8S_PHASE_STEP
-    name: StakeholderNotification
+    name: Stakeholder Notification
     steps:
     - type: EMAIL
       name: Email Team
