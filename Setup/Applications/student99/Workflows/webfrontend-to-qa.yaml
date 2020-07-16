@@ -36,6 +36,16 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: QASignoff
+    steps:
+    - type: APPROVAL
+      name: QA Testing and Signoff
+      properties:
+        approvalStateType: USER_GROUP
+        templateExpressions: null
+        timeoutMillis: 86400000
+        userGroups:
+        - gnrkClfoQSKeBt4Gw99zIA
+        - 9Z7hYnw7Rgy1h88ZNuW4kg
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: SecOpsSignoff
