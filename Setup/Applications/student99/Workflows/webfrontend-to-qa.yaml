@@ -46,7 +46,7 @@ phases:
         userGroups:
         - gnrkClfoQSKeBt4Gw99zIA
         - 9Z7hYnw7Rgy1h88ZNuW4kg
-    stepsInParallel: true
+    stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: SecOps Signoff
     steps:
