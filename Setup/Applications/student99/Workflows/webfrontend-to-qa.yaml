@@ -27,7 +27,7 @@ phases:
     name: Deploy
     steps:
     - type: K8S_DEPLOYMENT_ROLLING
-      name: Rollout Deployment
+      name: pushWFEtoQA
       properties:
         stateTimeoutInMinutes: 10
         templateUuid: null
