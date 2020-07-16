@@ -63,12 +63,15 @@ phases:
     name: StakeholderNotification
     steps:
     - type: EMAIL
-      name: Email
+      name: Email Team
       properties:
         body: guess what it worked and stuff
         ccAddress: ''
         ignoreDeliveryFailure: false
         subject: It worked!
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         toAddress: drew.oetzel@harness.io
     stepsInParallel: false
   provisionNodes: false
