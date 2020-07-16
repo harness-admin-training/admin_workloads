@@ -5,8 +5,8 @@ envName: laptop_minikube
 failureStrategies:
 - executionScope: WORKFLOW
   failureTypes:
-  - APPLICATION_ERROR
-  repairActionCode: ROLLBACK_WORKFLOW
+  - CONNECTIVITY
+  repairActionCode: ROLLBACK_PHASE
   retryCount: 0
 notificationRules:
 - conditions:
