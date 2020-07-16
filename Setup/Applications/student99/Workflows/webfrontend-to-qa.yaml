@@ -48,7 +48,7 @@ phases:
         - 9Z7hYnw7Rgy1h88ZNuW4kg
     stepsInParallel: false
   - type: K8S_PHASE_STEP
-    name: SecOpsSignoff
+    name: SecOps Signoff
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: StakeholderNotification
