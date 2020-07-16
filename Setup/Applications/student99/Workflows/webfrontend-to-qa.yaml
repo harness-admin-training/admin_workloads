@@ -35,7 +35,7 @@ phases:
         templateVersion: null
     stepsInParallel: false
   - type: K8S_PHASE_STEP
-    name: Verify
+    name: QASignoff
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: SecOpsSignoff
