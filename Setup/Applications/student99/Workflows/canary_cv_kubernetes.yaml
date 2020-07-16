@@ -105,6 +105,14 @@ rollbackPhases:
         deleteNamespacesForRelease: false
         resources: ${k8s.canaryWorkload}
         stateTimeoutInMinutes: 10
+    - type: EMAIL
+      name: Email
+      properties:
+        body: RIP Monsieur Canary
+        ccAddress: ''
+        ignoreDeliveryFailure: false
+        subject: oh noes the canary died
+        toAddress: myteam@mycompany.com
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
