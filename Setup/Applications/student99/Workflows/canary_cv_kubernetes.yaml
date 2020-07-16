@@ -1,7 +1,7 @@
 harnessApiVersion: '1.0'
 type: CANARY
 concurrencyStrategy: INFRA
-envName: ubuntu_minikube
+envName: laptop_minikube
 failureStrategies:
 - executionScope: WORKFLOW
   failureTypes:
