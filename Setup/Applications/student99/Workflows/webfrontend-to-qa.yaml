@@ -41,7 +41,7 @@ phases:
     name: SecOpsSignoff
     stepsInParallel: false
   - type: K8S_PHASE_STEP
-    name: Wrap Up
+    name: StakeholderNotification
     stepsInParallel: false
   provisionNodes: false
   serviceName: webfrontend
