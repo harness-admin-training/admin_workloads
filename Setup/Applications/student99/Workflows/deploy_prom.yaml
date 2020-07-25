@@ -18,9 +18,9 @@ notificationRules:
   - WYlgevlOQSmIIi3zZ35gKw
 phases:
 - type: KUBERNETES
-  computeProviderName: HovgCHyzRFyYmr38DXsmgw
+  computeProviderName: minimini
   daemonSet: false
-  infraDefinitionName: ubuntu_minikube_prometheus
+  infraDefinitionName: minimini
   name: Rolling
   phaseSteps:
   - type: K8S_PHASE_STEP
@@ -40,9 +40,9 @@ phases:
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: HovgCHyzRFyYmr38DXsmgw
+  computeProviderName: minimini
   daemonSet: false
-  infraDefinitionName: ubuntu_minikube_prometheus
+  infraDefinitionName: minimini
   name: Rollback Rolling
   phaseNameForRollback: Rolling
   phaseSteps:
