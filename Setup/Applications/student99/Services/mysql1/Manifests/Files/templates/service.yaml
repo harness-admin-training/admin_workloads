@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: {{.Values.name}}-svc
 spec:
-  type: {{.Values.serviceType}}
   ports:
   - port: {{.Values.servicePort}}
     protocol: TCP
