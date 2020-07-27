@@ -22,7 +22,15 @@ serviceTargetPort: 80
 # and a Secret, respectively.
 # Both are added to the container environment in podSpec as envFrom source.
 env:
-  config:
-    key1: value1
-  secrets:
-    key2: value2
+  - name: MYSQL_ROOT_PASSWORD
+    value: password
+  ports:
+  - containerPort: 3306
+    name: mysql
+  volumeMounts:
+  - name: mysql-persistent-storage
+    mountPath: /var/lib/mysql
+  volumes:
+  - name: mysql-persistent-storage
+    persistentVolumeClaim:
+      claimName: mysql-pv-claim
