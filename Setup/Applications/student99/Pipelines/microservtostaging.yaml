@@ -1,0 +1,60 @@
+harnessApiVersion: '1.0'
+type: PIPELINE
+description: Deploy Microservices A, B, and C to Staging
+pipelineStages:
+- type: ENV_STATE
+  name: canary_cv_kubernetes
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: canary_cv_kubernetes
+  workflowVariables:
+  - name: verify_canary
+    value: 'yes'
+  - name: pullID
+    value: ${pullrequest.id}
+  - name: metric_verification
+    value: Prometheus
+- type: ENV_STATE
+  name: deploy_prom
+  parallel: true
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: deploy_prom
+- type: APPROVAL
+  name: Approval 2
+  parallel: false
+  properties:
+    userGroups:
+    - QA Team
+    pipelineStageElementId: pfhRVqjBQbqk5CmcHxEApA
+    stageName: STAGE 2
+    disable: false
+    timeoutMillis: 86400000
+    pipelineStageParallelIndex: 2
+    approvalStateType: USER_GROUP
+    sweepingOutputName: ''
+    pipelineId: -J5-ZDF0TKmFPcTWBoKlLw
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
+- type: APPROVAL
+  name: Approval 3
+  parallel: true
+  properties:
+    userGroups:
+    - SecOps Team
+    workflowVariables: null
+    pipelineStageElementId: Qur4ZbpDQhyHc8Ta1_9Dyg
+    stageName: STAGE 2
+    disable: false
+    timeoutMillis: 86400000
+    pipelineStageParallelIndex: 2
+    approvalStateType: USER_GROUP
+    sweepingOutputName: ''
+    pipelineId: -J5-ZDF0TKmFPcTWBoKlLw
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2

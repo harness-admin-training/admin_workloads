@@ -155,3 +155,7 @@ userVariables:
   mandatory: false
   name: metric_verification
   value: Prometheus
+- type: TEXT
+  fixed: false
+  mandatory: true
+  name: pullID
