@@ -1,9 +1,0 @@
-harnessApiVersion: '1.0'
-type: APPLICATION_MANIFEST
-gitFileConfig:
-  branch: master
-  connectorName: fundamentals-git
-  useBranch: true
-kustomizeConfig:
-  kustomizeDirPath: wordpress
-storeType: KustomizeSourceRepo

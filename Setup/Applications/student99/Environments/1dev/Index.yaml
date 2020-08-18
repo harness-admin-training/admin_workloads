@@ -1,5 +1,0 @@
-harnessApiVersion: '1.0'
-type: ENVIRONMENT
-configMapYamlByServiceTemplateName: {}
-description: Central Dev Infra
-environmentType: NON_PROD
