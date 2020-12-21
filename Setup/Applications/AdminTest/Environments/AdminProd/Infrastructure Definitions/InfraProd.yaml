@@ -4,6 +4,6 @@ cloudProviderType: KUBERNETES_CLUSTER
 deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
-  cloudProviderName: Harness Sample K8s Cloud Provider
+  cloudProviderName: My AKS Cluster
   namespace: infraprod2
   releaseName: release-${infra.kubernetes.infraId}

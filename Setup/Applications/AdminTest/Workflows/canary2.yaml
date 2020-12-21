@@ -18,7 +18,7 @@ notificationRules:
   - duMEq8WxTRKZ4lgFSJykSg
 phases:
 - type: KUBERNETES
-  computeProviderName: Harness Sample K8s Cloud Provider
+  computeProviderName: My AKS Cluster
   daemonSet: false
   infraDefinitionName: Prometheus
   name: Canary
@@ -66,7 +66,7 @@ phases:
   serviceName: cvdeploy
   statefulSet: false
 - type: KUBERNETES
-  computeProviderName: Harness Sample K8s Cloud Provider
+  computeProviderName: My AKS Cluster
   daemonSet: false
   infraDefinitionName: Prometheus
   name: Primary
@@ -88,7 +88,7 @@ phases:
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: Harness Sample K8s Cloud Provider
+  computeProviderName: My AKS Cluster
   daemonSet: false
   infraDefinitionName: Prometheus
   name: Rollback Canary
@@ -114,7 +114,7 @@ rollbackPhases:
   serviceName: cvdeploy
   statefulSet: false
 - type: KUBERNETES
-  computeProviderName: Harness Sample K8s Cloud Provider
+  computeProviderName: My AKS Cluster
   daemonSet: false
   infraDefinitionName: Prometheus
   name: Rollback Primary
