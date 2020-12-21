@@ -5,5 +5,5 @@ deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
   cloudProviderName: Harness Sample K8s Cloud Provider
-  namespace: infraprod
+  namespace: infraprod2
   releaseName: release-${infra.kubernetes.infraId}
