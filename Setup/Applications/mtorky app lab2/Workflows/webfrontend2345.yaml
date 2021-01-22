@@ -14,7 +14,7 @@ phases:
   phaseSteps:
   - type: PREPARE_STEPS
     name: Prepare Steps
-    stepsInParallel: false
+    stepsInParallel: true
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
     steps:
