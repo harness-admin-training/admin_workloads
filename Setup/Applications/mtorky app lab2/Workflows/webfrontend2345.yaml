@@ -32,6 +32,23 @@ phases:
         timeoutMillis: 10000
         url: https://abc.iot
         useProxy: false
+    - type: SHELL_SCRIPT
+      name: Shell Script to fetch data from external source
+      properties:
+        commandPath: null
+        connectionAttributes: null
+        executeOnDelegate: true
+        host: null
+        outputVars: ''
+        publishAsVar: false
+        scriptString: test
+        scriptType: BASH
+        sshKeyRef: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
+        templateVariables: ''
+        timeoutMillis: 60000
     stepsInParallel: true
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
