@@ -1,1 +1,2 @@
 name: service-d
+image: library/nginx:1.19.4
