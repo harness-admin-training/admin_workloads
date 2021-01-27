@@ -27,6 +27,6 @@ executionName: Scenario 3
 executionType: Pipeline
 triggerCondition:
 - type: SCHEDULED
-  cronDescription: every 5 minutes UTC
-  cronExpression: '*/5 * * * ?'
+  cronDescription: every 10 minutes UTC
+  cronExpression: '*/10 * * * ?'
   onNewArtifact: false
