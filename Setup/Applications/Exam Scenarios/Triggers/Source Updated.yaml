@@ -1,0 +1,19 @@
+harnessApiVersion: '1.0'
+type: TRIGGER
+continueWithDefaultValues: false
+executionName: Scenario 3
+executionType: Pipeline
+triggerCondition:
+- type: WEBHOOK
+  branchName: master
+  branchRegex: master
+  checkFileContentChanged: true
+  eventType:
+  - push
+  filePaths:
+  - Setup/Applications/Exam Scenarios/Services/Service A/Values/values.yaml
+  - Setup/Applications/Exam Scenarios/Services/Service B/Values/values.yaml
+  - Setup/Applications/Exam Scenarios/Services/Service C/Values/values.yaml
+  - Setup/Applications/Exam Scenarios/Services/Service D/Values/values.yaml
+  gitConnectorId: _xY4NzjGRiqfccNOTJ0RdA
+  repositoryType: GITHUB
