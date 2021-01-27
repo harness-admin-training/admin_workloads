@@ -1,7 +1,7 @@
 name: harness-example
 replicas: 1
 
-image: ${artifact.metadata.image}
+image: library/nginx:1.19.5
 dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
