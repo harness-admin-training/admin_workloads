@@ -1,0 +1,32 @@
+harnessApiVersion: '1.0'
+type: TRIGGER
+artifactSelections:
+- artifactFilter: 1.19.3
+  artifactStreamName: library_nginx
+  regex: false
+  serviceName: Service C
+  type: LAST_COLLECTED
+- artifactFilter: 1.19.3
+  artifactStreamName: library_nginx
+  regex: false
+  serviceName: Service A
+  type: LAST_COLLECTED
+- artifactFilter: 1.19.3
+  artifactStreamName: library_nginx
+  regex: false
+  serviceName: Service B
+  type: LAST_COLLECTED
+- artifactFilter: 1.19.3
+  artifactStreamName: library_nginx
+  regex: false
+  serviceName: Service D
+  type: LAST_COLLECTED
+continueWithDefaultValues: false
+description: timed trigger
+executionName: Scenario 3
+executionType: Pipeline
+triggerCondition:
+- type: SCHEDULED
+  cronDescription: every minute UTC
+  cronExpression: '* * * * ?'
+  onNewArtifact: false
