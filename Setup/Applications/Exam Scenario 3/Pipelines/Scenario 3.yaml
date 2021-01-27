@@ -1,0 +1,34 @@
+harnessApiVersion: '1.0'
+type: PIPELINE
+description: Deploy tightly coupled application
+pipelineStages:
+- type: ENV_STATE
+  name: Deploy Service A
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: Deploy Service A
+- type: ENV_STATE
+  name: Deploy Service B
+  parallel: true
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: Deploy Service B
+- type: ENV_STATE
+  name: Deploy Service C
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
+  workflowName: Deploy Service C
+- type: ENV_STATE
+  name: Deploy Service D
+  parallel: true
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 2
+  workflowName: Deploy Service D
+tags:
+  Pipeline: ${workflow.pipelineDeploymentUuid}
