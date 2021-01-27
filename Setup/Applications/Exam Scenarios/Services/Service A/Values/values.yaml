@@ -1,1 +1,2 @@
 name: service-a
+image: library/nginx:1.19.5
