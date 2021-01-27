@@ -1,7 +1,7 @@
 harnessApiVersion: '1.0'
 type: TRIGGER
 continueWithDefaultValues: false
-executionName: Scenario 3
+executionName: Deploy tightly coupled application to staging
 executionType: Pipeline
 triggerCondition:
 - type: WEBHOOK
