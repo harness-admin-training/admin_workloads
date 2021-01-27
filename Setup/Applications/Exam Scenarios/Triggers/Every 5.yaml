@@ -23,7 +23,7 @@ artifactSelections:
   type: LAST_COLLECTED
 continueWithDefaultValues: false
 description: timed trigger
-executionName: Scenario 3
+executionName: Deploy tightly coupled application to staging
 executionType: Pipeline
 triggerCondition:
 - type: SCHEDULED
