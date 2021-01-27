@@ -51,5 +51,12 @@ pipelineStages:
     type: DO_NOT_SKIP
   stageName: STAGE 2
   workflowName: Deploy Service D
+  workflowVariables:
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: Staging
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_KUBERNETES
+    value: az-staging
 tags:
   Pipeline: ${workflow.pipelineDeploymentUuid}
