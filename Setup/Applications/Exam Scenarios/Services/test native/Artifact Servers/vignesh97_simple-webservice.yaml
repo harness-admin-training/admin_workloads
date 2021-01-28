@@ -1,0 +1,4 @@
+harnessApiVersion: '1.0'
+type: DOCKER
+imageName: vignesh97/simple-webservice
+serverName: Harness Docker Hub
