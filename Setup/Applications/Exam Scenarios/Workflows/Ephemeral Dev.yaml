@@ -86,7 +86,11 @@ rollbackPhases:
       name: Delete
       properties:
         deleteNamespacesForRelease: false
+        resources: ${k8s.canaryWorkload}
         stateTimeoutInMinutes: 10
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
     stepsInParallel: false
   provisionNodes: false
   serviceName: test namespace
