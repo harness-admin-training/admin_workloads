@@ -19,7 +19,7 @@ notificationRules:
 templatized: true
 userVariables:
 - type: TEXT
-  allowedValues: staging
+  allowedValues: dev,staging
   fixed: false
   mandatory: false
   name: namespace
