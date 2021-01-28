@@ -1,6 +1,7 @@
 harnessApiVersion: '1.0'
 type: CANARY
 concurrencyStrategy: INFRA
+description: 'Currently Requires Namespace to be defined.  '
 envName: Development
 failureStrategies:
 - executionScope: WORKFLOW
