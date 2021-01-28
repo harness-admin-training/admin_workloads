@@ -68,4 +68,13 @@ rollbackPhases:
   provisionNodes: false
   serviceName: Service A
   statefulSet: false
-templatized: false
+templatized: true
+userVariables:
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: namespace
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: name
