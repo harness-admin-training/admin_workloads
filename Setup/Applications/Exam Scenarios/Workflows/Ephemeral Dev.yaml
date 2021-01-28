@@ -48,9 +48,11 @@ phases:
         sweepingOutputName: null
         sweepingOutputScope: null
         tags: null
-        templateVariables: ''
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         timeoutMillis: 10000
-        url: http://test
+        url: http://test-namespace/healthcheck
         useProxy: false
     stepsInParallel: false
   - type: K8S_PHASE_STEP
