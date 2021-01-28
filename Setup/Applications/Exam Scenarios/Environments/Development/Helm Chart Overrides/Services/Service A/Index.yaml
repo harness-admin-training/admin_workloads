@@ -1,5 +1,0 @@
-harnessApiVersion: '1.0'
-type: APPLICATION_MANIFEST_HELM_ENV_SERVICE_OVERRIDE
-helmChartConfig:
-  connectorName: Bitnami
-storeType: HelmChartRepo
