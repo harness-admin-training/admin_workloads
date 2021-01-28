@@ -3,4 +3,4 @@ type: SERVICE
 artifactType: DOCKER
 deploymentType: KUBERNETES
 description: Tightly coupled to service B
-helmVersion: V2
+helmVersion: V3
