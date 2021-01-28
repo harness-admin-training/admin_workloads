@@ -61,8 +61,13 @@ phases:
     - type: K8S_DELETE
       name: Canary Delete
       properties:
+        deleteNamespacesForRelease: true
         instanceUnitType: COUNT
-        resources: ${k8s.canaryWorkload}
+        resources: '*'
+        stateTimeoutInMinutes: 10
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
     stepsInParallel: false
   provisionNodes: false
   serviceName: test namespace
