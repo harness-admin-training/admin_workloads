@@ -1,2 +1,4 @@
 name: service-a
 namespace: ${infra.kubernetes.namespace}
+metrics.serviceMonitor.namespace: prometheus
+image.tag: latest
