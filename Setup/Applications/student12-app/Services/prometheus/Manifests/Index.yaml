@@ -1,0 +1,9 @@
+harnessApiVersion: '1.0'
+type: APPLICATION_MANIFEST
+gitFileConfig:
+  branch: master
+  connectorName: admin_labs_git
+  filePath: prometheus
+  useBranch: true
+  useInlineServiceDefinition: false
+storeType: Remote
