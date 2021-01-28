@@ -1,0 +1,16 @@
+harnessApiVersion: '1.0'
+type: TRIGGER
+continueWithDefaultValues: false
+executionName: Deploy tightly coupled application to staging
+executionType: Pipeline
+triggerCondition:
+- type: WEBHOOK
+  branchName: master
+  branchRegex: master
+  checkFileContentChanged: true
+  eventType:
+  - push
+  filePaths:
+  - Setup/Applications/Exam\ Scenarios/Services/Service\ A/Manifests/Files
+  gitConnectorId: _xY4NzjGRiqfccNOTJ0RdA
+  repositoryType: GITHUB
