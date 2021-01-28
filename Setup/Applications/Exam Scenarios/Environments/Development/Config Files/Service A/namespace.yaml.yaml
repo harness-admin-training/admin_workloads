@@ -1,0 +1,7 @@
+harnessApiVersion: '1.0'
+type: CONFIG_FILE_OVERRIDE
+checksum: yX+qCMJUwc1pdahbMJftkg==
+checksumType: MD5
+encrypted: false
+fileName: namespace.yaml
+targetFilePath: namespace.yaml
