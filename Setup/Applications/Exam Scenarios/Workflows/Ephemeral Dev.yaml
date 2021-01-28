@@ -25,12 +25,6 @@ phases:
   phaseSteps:
   - type: K8S_PHASE_STEP
     name: namespace
-    steps:
-    - type: K8S_APPLY
-      name: Create Namespace
-      properties:
-        filePaths: templates/namespace.yaml
-        stateTimeoutInMinutes: 10
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Deploy
