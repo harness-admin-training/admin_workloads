@@ -38,7 +38,7 @@ phases:
   provisionNodes: false
   serviceName: Create Namespace From Workflow Branch
   serviceVariableOverrides:
-  - name: name
+  - name: namespace
     value: ${workflow.variable.branch}
   statefulSet: false
 rollbackPhases:
