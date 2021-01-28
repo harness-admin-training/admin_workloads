@@ -26,15 +26,15 @@ phases:
   - type: K8S_PHASE_STEP
     name: Deploy
     steps:
+    - type: K8S_DEPLOYMENT_ROLLING
+      name: Rollout Deployment
+      properties:
+        stateTimeoutInMinutes: 10
     - type: K8S_CANARY_DEPLOY
       name: Canary Deployment
       properties:
         instanceUnitType: COUNT
         instances: '1'
-    - type: K8S_DEPLOYMENT_ROLLING
-      name: Rollout Deployment
-      properties:
-        stateTimeoutInMinutes: 10
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
