@@ -24,6 +24,9 @@ phases:
   name: Canary
   phaseSteps:
   - type: K8S_PHASE_STEP
+    name: namespace
+    stepsInParallel: false
+  - type: K8S_PHASE_STEP
     name: Deploy
     steps:
     - type: K8S_CANARY_DEPLOY
@@ -31,9 +34,6 @@ phases:
       properties:
         instanceUnitType: COUNT
         instances: '1'
-    stepsInParallel: false
-  - type: K8S_PHASE_STEP
-    name: namespace
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
