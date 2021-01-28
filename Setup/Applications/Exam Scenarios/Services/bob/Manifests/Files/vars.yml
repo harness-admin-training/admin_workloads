@@ -1,3 +1,0 @@
-PCF_APP_NAME: ${app.name}__${service.name}__${env.name}
-PCF_APP_MEMORY: 750M
-INSTANCES: 1
