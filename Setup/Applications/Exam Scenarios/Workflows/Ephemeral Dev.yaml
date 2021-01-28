@@ -56,6 +56,9 @@ phases:
         useProxy: false
     stepsInParallel: false
   - type: K8S_PHASE_STEP
+    name: namespace
+    stepsInParallel: false
+  - type: K8S_PHASE_STEP
     name: Wrap Up
     steps:
     - type: K8S_DELETE
@@ -68,9 +71,6 @@ phases:
         templateUuid: null
         templateVariables: null
         templateVersion: null
-    stepsInParallel: false
-  - type: K8S_PHASE_STEP
-    name: namespace
     stepsInParallel: false
   provisionNodes: false
   serviceName: test namespace
