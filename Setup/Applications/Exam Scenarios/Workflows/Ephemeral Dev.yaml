@@ -129,5 +129,5 @@ userVariables:
   name: Service
 - type: TEXT
   fixed: false
-  mandatory: false
-  name: namespace
+  mandatory: true
+  name: branch
