@@ -1,1 +1,2 @@
 name: service-a
+namespace: ${infra.kubernetes.namespace}
