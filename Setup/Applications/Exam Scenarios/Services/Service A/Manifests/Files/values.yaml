@@ -1,4 +1,4 @@
-name: harness-example
+name: service-a
 replicas: 1
 
 image: library/nginx:1.19.5
