@@ -129,5 +129,6 @@ userVariables:
   name: Service
 - type: TEXT
   fixed: false
-  mandatory: true
+  mandatory: false
   name: branch
+  value: master
