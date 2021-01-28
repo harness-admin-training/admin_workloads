@@ -1,9 +1,3 @@
 harnessApiVersion: '1.0'
 type: APPLICATION_MANIFEST
-gitFileConfig:
-  branch: master
-  connectorName: Admin_workloads
-  filePath: Setup/Applications/Exam\ Scenarios/Services/Service\ A/Manifests/Files
-  useBranch: true
-  useInlineServiceDefinition: false
-storeType: Remote
+storeType: Local
