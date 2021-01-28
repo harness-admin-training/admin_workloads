@@ -105,7 +105,6 @@ rollbackPhases:
 templatized: true
 userVariables:
 - type: TEXT
-  allowedValues: dev,staging
   fixed: false
   mandatory: false
   name: namespace
