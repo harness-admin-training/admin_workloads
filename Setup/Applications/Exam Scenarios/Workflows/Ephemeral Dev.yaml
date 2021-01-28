@@ -16,4 +16,10 @@ notificationRules:
   userGroupAsExpression: false
   userGroupIds:
   - duMEq8WxTRKZ4lgFSJykSg
-templatized: false
+templatized: true
+userVariables:
+- type: TEXT
+  allowedValues: staging
+  fixed: false
+  mandatory: false
+  name: namespace
