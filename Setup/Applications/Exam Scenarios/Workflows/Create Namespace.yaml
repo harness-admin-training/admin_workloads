@@ -70,3 +70,8 @@ userVariables:
   fixed: false
   mandatory: true
   name: namespace
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: branch
+  value: ${workflow.variable.namespace}
