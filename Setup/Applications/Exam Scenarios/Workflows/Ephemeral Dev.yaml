@@ -92,8 +92,8 @@ rollbackPhases:
     - type: K8S_DELETE
       name: Delete
       properties:
-        deleteNamespacesForRelease: false
-        resources: ${k8s.canaryWorkload}
+        deleteNamespacesForRelease: true
+        resources: '*'
         stateTimeoutInMinutes: 10
         templateUuid: null
         templateVariables: null
