@@ -69,6 +69,9 @@ phases:
         templateVariables: null
         templateVersion: null
     stepsInParallel: false
+  - type: K8S_PHASE_STEP
+    name: namespace
+    stepsInParallel: false
   provisionNodes: false
   serviceName: test namespace
   statefulSet: false
