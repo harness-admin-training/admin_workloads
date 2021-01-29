@@ -138,6 +138,6 @@ userVariables:
   value: master
 - type: TEXT
   fixed: false
-  mandatory: true
+  mandatory: false
   name: namespace
   value: ephemeral
