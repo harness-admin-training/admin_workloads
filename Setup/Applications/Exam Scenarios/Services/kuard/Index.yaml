@@ -1,0 +1,6 @@
+harnessApiVersion: '1.0'
+type: SERVICE
+artifactType: DOCKER
+deploymentType: KUBERNETES
+description: Demo application for "Kubernetes Up and Running"
+helmVersion: V2
