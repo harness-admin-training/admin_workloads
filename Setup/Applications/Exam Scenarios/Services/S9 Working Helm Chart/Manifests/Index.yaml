@@ -3,7 +3,7 @@ type: APPLICATION_MANIFEST
 gitFileConfig:
   branch: master
   connectorName: helm-lab
-  filePath: helm-labs
+  filePath: helm-lab
   useBranch: true
   useInlineServiceDefinition: false
 storeType: HelmSourceRepo
