@@ -141,3 +141,7 @@ userVariables:
   mandatory: true
   name: namespace
   value: ephemeral
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: image
