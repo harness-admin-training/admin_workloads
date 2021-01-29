@@ -1,0 +1,6 @@
+name: service-a
+namespace: ${workflow.variables.namespace}
+metrics.serviceMonitor.namespace: prometheus
+image:
+  repository: bitnami/nginx
+  tag: 1.19.6-debian-10-r37
