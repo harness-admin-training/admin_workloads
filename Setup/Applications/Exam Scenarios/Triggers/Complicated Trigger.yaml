@@ -17,4 +17,4 @@ workflowVariables:
   name: Service
   value: Service A
 - name: branch
-  value: master
+  value: ${pullrequest.fromRef.branch.name}
