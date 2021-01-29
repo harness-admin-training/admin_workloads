@@ -1,9 +1,7 @@
 harnessApiVersion: '1.0'
 type: APPLICATION_MANIFEST
-gitFileConfig:
-  branch: master
-  connectorName: helm-lab
-  filePath: helm-lab
-  useBranch: true
-  useInlineServiceDefinition: false
-storeType: HelmSourceRepo
+helmChartConfig:
+  chartName: helmHook
+  chartUrl: https://github.com/bfeuling01/harness-io/helm-lab
+  chartVersion: 0.1.0
+storeType: HelmChartRepo
