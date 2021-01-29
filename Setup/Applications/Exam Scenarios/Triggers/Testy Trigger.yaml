@@ -6,7 +6,7 @@ executionType: Workflow
 triggerCondition:
 - type: WEBHOOK
   action:
-  - opened
+  - synchronize
   eventType:
   - pull_request
   repositoryType: GITHUB
