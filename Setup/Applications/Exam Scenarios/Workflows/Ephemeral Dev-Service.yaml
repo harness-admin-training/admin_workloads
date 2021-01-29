@@ -140,4 +140,3 @@ userVariables:
   fixed: false
   mandatory: false
   name: namespace
-  value: ephemeral
