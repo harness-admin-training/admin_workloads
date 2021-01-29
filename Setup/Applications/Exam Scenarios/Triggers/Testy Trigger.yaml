@@ -12,7 +12,7 @@ triggerCondition:
   repositoryType: GITHUB
 workflowVariables:
 - name: namespace
-  value: ephemeral
+  value: ephemeral-${pull_request.number}
 - entityType: SERVICE
   name: Service
   value: Testy
