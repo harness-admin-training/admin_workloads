@@ -1,6 +1,0 @@
-harnessApiVersion: '1.0'
-type: APPLICATION_MANIFEST
-helmChartConfig:
-  chartName: bitnami/nginx
-  chartUrl: https://charts.bitnami.com/bitnami
-storeType: HelmChartRepo
