@@ -3,5 +3,4 @@ type: APPLICATION_MANIFEST
 helmChartConfig:
   chartName: helmHook
   chartUrl: https://github.com/totallygreg/harness-io/helm-lab
-  chartVersion: 0.1.0
 storeType: HelmChartRepo
