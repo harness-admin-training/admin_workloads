@@ -2,5 +2,5 @@ harnessApiVersion: '1.0'
 type: APPLICATION_MANIFEST
 helmChartConfig:
   chartName: helmhook
-  chartUrl: https://github.com/totallygreg/harness-io/helm-lab
+  chartUrl: https://totallygreg.github.io/harness-io
 storeType: HelmChartRepo
