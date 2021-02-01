@@ -85,6 +85,25 @@ phases:
       value: DOCKER
     - name: entityType
       value: SERVICE
+preDeploymentSteps:
+- type: SHELL_SCRIPT
+  name: Create Namespace
+  properties:
+    commandPath: null
+    connectionAttributes: null
+    executeOnDelegate: true
+    host: null
+    outputVars: ''
+    publishAsVar: false
+    scriptString: |
+      kubectl create namespace ${workflow.variables.namespace} --dry-run=client -o yaml | kubectl apply -f -
+    scriptType: BASH
+    sshKeyRef: null
+    sweepingOutputName: null
+    sweepingOutputScope: null
+    templateExpressions: null
+    templateVariables: ''
+    timeoutMillis: 60000
 rollbackPhases:
 - type: KUBERNETES
   computeProviderName: My AKS Cluster
