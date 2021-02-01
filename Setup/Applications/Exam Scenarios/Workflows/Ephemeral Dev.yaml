@@ -40,7 +40,7 @@ phases:
     name: Verify
     steps:
     - type: HTTP
-      name: HTTP Assertion
+      name: Simple HTTP Assertion
       properties:
         assertion: ${httpResponseCode}==200
         body: ''
@@ -56,7 +56,7 @@ phases:
         templateVariables: null
         templateVersion: null
         timeoutMillis: 10000
-        url: http://${instance.host.ip}/healthcheck
+        url: http://${instance.host.ip}
         useProxy: false
     stepsInParallel: false
   - type: K8S_PHASE_STEP
