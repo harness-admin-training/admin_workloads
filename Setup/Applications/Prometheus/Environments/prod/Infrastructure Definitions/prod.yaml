@@ -5,5 +5,5 @@ deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
   cloudProviderName: Harness Sample K8s Cloud Provider
-  namespace: prometheus1
+  namespace: prometheus
   releaseName: release-${infra.kubernetes.infraId}
