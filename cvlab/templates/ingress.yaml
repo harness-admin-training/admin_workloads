@@ -17,9 +17,9 @@ spec:
         pathType: Prefix
         backend:
           service:
-             name: {{.Values.name}}-canary
-             port: 
-               name: http-canary
+            name: {{.Values.name}}-canary
+            port: 
+              name: http-canary
 ---
 #
 # Ingress targeting stable only, at /api/*
@@ -40,6 +40,6 @@ spec:
         pathType: Prefix
         backend:
           service
-             name: {{.Values.name}}-stable
-             port: 
-               name: http-stable
+            name: {{.Values.name}}-stable
+            port: 
+              name: http-stable
