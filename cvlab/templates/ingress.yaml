@@ -14,6 +14,7 @@ spec:
   - http:
       paths:
       - path: /canary/(.*)
+        pathType: Prefix
         backend:
           service:
              name: {{.Values.name}}-canary
@@ -36,6 +37,7 @@ spec:
   - http:
       paths:
       - path: /api/(.*)
+        pathType: Prefix
         backend:
           service
              name: {{.Values.name}}-stable
