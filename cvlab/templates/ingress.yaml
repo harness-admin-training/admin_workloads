@@ -39,7 +39,7 @@ spec:
       - path: /api/(.*)
         pathType: Prefix
         backend:
-          service
+          service:
             name: {{.Values.name}}-stable
             port: 
               name: http-stable
