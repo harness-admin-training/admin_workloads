@@ -13,7 +13,7 @@ spec:
         app: prometheus-server
     spec:
       {{- if .Values.nodeSelector}}
-      nodeSelector: {{.Values.nodeSelector}}
+      nodeName: {{.Values.nodeSelector}}
       {{- end}}
       containers:
         - name: prometheus
