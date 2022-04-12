@@ -12,7 +12,7 @@ spec:
       labels:
         app: prometheus-server
     spec:
-      {{- if .Values.loadBalancerIP}}
+      {{- if .Values.nodeSelector}}
       nodeSelector: {{.Values.nodeSelector}}
       {{- end}}
       containers:
