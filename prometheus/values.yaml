@@ -1,5 +1,5 @@
 namespace: ${infra.kubernetes.namespace}
 
-loadBalancerIP: ""
+#loadBalancerIP: ""
 
 nodeSelector: k3s-1-master
